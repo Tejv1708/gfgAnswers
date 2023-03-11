@@ -7,6 +7,7 @@ public class MinimumJumps {
 			int n = arr.length;
 			int farthest = 0, jumps = 0, current = 0;
 			for (int i = 0; i < n - 1; i++) {
+				//Here current play the major role until " i==current " 
 				farthest = Math.max(farthest, arr[i] + i);
 				if (i == current) {
 					current = farthest;
